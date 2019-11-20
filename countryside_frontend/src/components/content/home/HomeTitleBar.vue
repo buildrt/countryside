@@ -1,6 +1,6 @@
 <template>
   <div id="homeTitleBar">
-    <table id="headTable" cellpadding="0" cellspacing="0" border="1">
+    <table id="headTable" cellpadding="0" cellspacing="0" border="0">
       <tr>
         <td width="10%">
           <span>Logo</span>
@@ -9,16 +9,15 @@
           <span>乡村宝藏</span>
         </td>
         <td></td>
-        <td width="10%">
-          <span>日历</span>
+        <td width="30%">
+          <span>
+            <iframe scrolling="no" src="https://tianqiapi.com/api.php?style=tx&skin=pitaya&fontsize=15&color=d0cccc" frameborder="0" width="100%" height="20" allowtransparency="true"></iframe>
+          </span>
         </td>
-        <td width="10%">
-          <span>天气</span>
-        </td>
-        <td width="50px">
+        <td width="5%">
           <span>登录</span>
         </td>
-        <td width="50px">
+        <td width="5%">
           <span>注册</span>
         </td>
         <td width="5%"></td>
@@ -32,6 +31,10 @@
     name: "HomeTitleBar"
   }
 </script>
+
+<style>
+
+</style>
 
 <style scoped>
   #homeTitleBar {
@@ -49,6 +52,9 @@
   }
   #headTable span {
     color: #d0cccc;
+    font-size: 15px;
+  }
+  #headTable span iframe {
     font-size: 15px;
   }
 </style>
