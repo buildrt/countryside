@@ -4,8 +4,8 @@
     <div id="headImg">
       <home-bar></home-bar>
       <div id="headContent">
-        <p id="p1">立即找到你的理想之地</p>
-        <h2 id="p2">乡村的宝藏</h2>
+        <div id="p1"><img src="../../assets/img/home/logo.png" alt=""></div>
+        <div id="p2"><img src="../../assets/img/home/title.png" alt=""></div>
         <div id="headBtn">
           <el-button id="homeHeadBtn" type="primary" round style="background-color: rgba(0,0,0,0);" @click="JumpToContent">开始旅程</el-button>
         </div>
@@ -99,17 +99,44 @@
             <div id="productContent" style="width: 100%; height: 100%;">
               <table cellpadding="0" cellspacing="0" border="0" style="position: absolute;width: 100%; height: 12%;">
                 <tr>
-                  <td width="25%">
-                    <el-image style="width: 85%;" :src="require('../../assets/img/home/product/product1.png')" :preview-src-list="[require('../../assets/img/home/product/product1.png')]" fit="fill"></el-image>
+                  <td width="50%">
+                    <div id="productImg">
+                      <el-image id="book" v-show="bookActive" :src="require('../../assets/img/home/product/01.png')" :preview-src-list="[require('../../assets/img/home/product/product1.png'),require('../../assets/img/home/product/product2.png'),require('../../assets/img/home/product/product3.png'),require('../../assets/img/home/product/product4.png')]" fit="fill"></el-image>
+                      <el-image id="other" v-show="otherActive" :src="require('../../assets/img/home/product/02.png')" :preview-src-list="[require('../../assets/img/home/product/picture/p1.png'),require('../../assets/img/home/product//picture/p2.png'),require('../../assets/img/home/product/picture/p3.png'),require('../../assets/img/home/product/picture/p4.png')]" fit="fill"></el-image>
+                      <el-image id="game" v-show="gameActive" :src="require('../../assets/img/home/product/03.png')" :preview-src-list="[require('../../assets/img/home/product/mall1.jpg'),require('../../assets/img/home/product/mall2.jpg')]" fit="fill"></el-image>
+                    </div>
                   </td>
-                  <td width="25%">
-                    <el-image style="width: 85%;" :src="require('../../assets/img/home/product/product2.png')" :preview-src-list="[require('../../assets/img/home/product/product2.png')]" fit="fill"></el-image>
-                  </td>
-                  <td width="25%">
-                    <el-image style="width: 85%;" :src="require('../../assets/img/home/product/product3.png')" :preview-src-list="[require('../../assets/img/home/product/product3.png')]" fit="fill"></el-image>
-                  </td>
-                  <td width="25%">
-                    <el-image style="width: 85%;" :src="require('../../assets/img/home/product/product4.png')" :preview-src-list="[require('../../assets/img/home/product/product4.png')]" fit="fill"></el-image>
+                  <td width="50%">
+                    <el-tabs id="productTabs" v-model="activeName4" @tab-click="productTabsClick">
+                      <el-tab-pane label="“村村游”大富翁" @click="gameIsActive" name="first" style="text-align: left">
+                        <p style="font-size: 14px;margin-bottom: 10px">不同于单 一的文字介绍，将乡村的特色、重点放在游戏当中。</p>
+                          <p style="font-size: 14px;margin-bottom: 10px">通过游戏的方式 让玩家们感受到乡村的独特魅力。</p>
+                          <p style="font-size: 14px;margin-bottom: 10px">其次，本团队将大富翁以及飞行棋 的游玩模式，做了结合和改善，提高游戏的可玩性。</p>
+                          <p style="font-size: 14px;margin-bottom: 10px">“村村游”大富翁是 由本团队的成员全程策划、设计、制作的，同时，团队还进行了反复 的试玩，</p>
+                          <p style="font-size: 14px;margin-bottom: 10px">测试游戏的不足点，进行进一步的改善等。</p>
+                      </el-tab-pane>
+                      <el-tab-pane label="明信片和书签" @click="bookIsActive" name="second" style="text-align: left">
+                        <p style="font-size: 14px;margin-bottom: 8px">出于丰富文创产品的目的，想以一种礼物的形式赠送给对接合作的村的村委会</p>
+                        <p style="font-size: 14px;margin-bottom: 8px">并且后期我们希望能通过该村的平台对我们制作的书签、明信片进行宣传,也可以挂在我们的网站上进行售卖，多种途径进行利用。</p>
+                        <p style="font-size: 14px;margin-bottom: 8px">其次，考虑到大富翁、宣传画册制作的成本太高，后期不可能将所有的乡村都囊括</p>
+                        <p style="font-size: 14px;margin-bottom: 8px">所以书签明信片就显得简单而又明了，是一个很好的选择。明信片也是由美术专业的同学负责</p>
+                        <p style="font-size: 14px;margin-bottom: 8px">都是纯手绘的乡村的风景等;书签是有会ps技术的同学负责，在电脑上进行制作， 并印刷下来的。</p>
+                      </el-tab-pane>
+                      <el-tab-pane label="帆布袋" name="third" style="text-align: left">
+                        <p style="font-size: 14px;margin-bottom: 15px">国务院办公厅印发《关于完善仲裁制度2》</p>
+                        <p style="font-size: 14px;margin-bottom: 15px">国务院办公厅关于推进养老服务发展的意见</p>
+                        <p style="font-size: 14px;margin-bottom: 15px">《关于完善仲裁制度提高仲裁公信力的若干意见》</p>
+                        <p style="font-size: 14px;margin-bottom: 15px">国务院办公厅关于推进养老服务发展的意见</p>
+                        <p style="font-size: 14px;margin-bottom: 15px">关于完善仲裁制度提高仲裁公信力的若干意见》</p>
+                      </el-tab-pane>
+                      <el-tab-pane label="其他" @click="otherIsActive" name="forth" style="text-align: left">
+                        <p style="font-size: 14px;margin-bottom: 10px">宣传画册为了改变一成不变的文字介绍方式，更加直观、更加吸人眼球，</p>
+                        <p style="font-size: 14px;margin-bottom: 10px">于是我们创作了宣传画册</p>
+                        <p style="font-size: 14px;margin-bottom: 10px">宣传画册方面我们有专业的美院同学负责，进行设计、绘画等</p>
+                        <p style="font-size: 14px;margin-bottom: 10px">其次， 在宣传画册中我们也融入了小红军的形象，</p>
+                        <p style="font-size: 14px;margin-bottom: 10px">将小红军作为宣传画册的引导， 带领大家进行更有序得浏览。</p>
+                      </el-tab-pane>
+                    </el-tabs>
                   </td>
                 </tr>
               </table>
@@ -119,16 +146,37 @@
         <tr>
           <td colspan="2">
             <div id="guideContent" style="width: 100%; height: 100%;">
-              <table cellspacing="0" cellpadding="0" border="0" style="position: absolute;width: 100%;height: 12%;top: 50%;">
+              <table cellpadding="0" cellspacing="0" border="0" style="position: absolute;width: 100%; height: 12%;">
                 <tr>
-                  <td width="33.3%">
-                    <el-image style="width: 85%;" :src="require('../../assets/img/home/guide/guide1.jpg')" :preview-src-list="[require('../../assets/img/home/guide/guide1.jpg')]" fit="fill"></el-image>
+                  <td width="50%">
+                    <el-tabs id="guideTabs" v-model="activeName4">
+                      <el-tab-pane label="住宿" name="first" style="text-align: left">
+                        <p style="font-size: 14px;margin-bottom: 10px">不同于单 一的文字介绍，将乡村的特色、重点放在游戏当中。</p>
+                        <p style="font-size: 14px;margin-bottom: 10px">通过游戏的方式 让玩家们感受到乡村的独特魅力。</p>
+                        <p style="font-size: 14px;margin-bottom: 10px">其次，本团队将大富翁以及飞行棋 的游玩模式，做了结合和改善，提高游戏的可玩性。</p>
+                        <p style="font-size: 14px;margin-bottom: 10px">“村村游”大富翁是 由本团队的成员全程策划、设计、制作的，同时，团队还进行了反复 的试玩，</p>
+                        <p style="font-size: 14px;margin-bottom: 10px">测试游戏的不足点，进行进一步的改善等。</p>
+                      </el-tab-pane>
+                      <el-tab-pane label="交通" name="second" style="text-align: left">
+                        <p style="font-size: 14px;margin-bottom: 8px">出于丰富文创产品的目的，想以一种礼物的形式赠送给对接合作的村的村委会</p>
+                        <p style="font-size: 14px;margin-bottom: 8px">并且后期我们希望能通过该村的平台对我们制作的书签、明信片进行宣传,也可以挂在我们的网站上进行售卖，多种途径进行利用。</p>
+                        <p style="font-size: 14px;margin-bottom: 8px">其次，考虑到大富翁、宣传画册制作的成本太高，后期不可能将所有的乡村都囊括</p>
+                        <p style="font-size: 14px;margin-bottom: 8px">所以书签明信片就显得简单而又明了，是一个很好的选择。明信片也是由美术专业的同学负责</p>
+                        <p style="font-size: 14px;margin-bottom: 8px">都是纯手绘的乡村的风景等;书签是有会ps技术的同学负责，在电脑上进行制作， 并印刷下来的。</p>
+                      </el-tab-pane>
+                      <el-tab-pane label="美食" name="third" style="text-align: left">
+                        <p style="font-size: 14px;margin-bottom: 15px">国务院办公厅印发《关于完善仲裁制度2》</p>
+                        <p style="font-size: 14px;margin-bottom: 15px">国务院办公厅关于推进养老服务发展的意见</p>
+                        <p style="font-size: 14px;margin-bottom: 15px">《关于完善仲裁制度提高仲裁公信力的若干意见》</p>
+                        <p style="font-size: 14px;margin-bottom: 15px">国务院办公厅关于推进养老服务发展的意见</p>
+                        <p style="font-size: 14px;margin-bottom: 15px">关于完善仲裁制度提高仲裁公信力的若干意见》</p>
+                      </el-tab-pane>
+                    </el-tabs>
                   </td>
-                  <td width="33.3%">
-                    <el-image style="width: 85%;" :src="require('../../assets/img/home/guide/guide2.jpg')" :preview-src-list="[require('../../assets/img/home/guide/guide2.jpg')]" fit="fill"></el-image>
-                  </td>
-                  <td>
-                    <el-image style="width: 85%;" :src="require('../../assets/img/home/guide/guide3.jpg')" :preview-src-list="[require('../../assets/img/home/guide/guide3.jpg')]" fit="fill"></el-image>
+                  <td width="50%">
+                    <div id="guideImg">
+                      <el-image :src="require('../../assets/img/home/guide/guide3.jpg')" :preview-src-list="[require('../../assets/img/home/guide/guide1.jpg'),require('../../assets/img/home/guide/guide2.jpg'),require('../../assets/img/home/guide/guide3.jpg')]" fit="fill"></el-image>
+                    </div>
                   </td>
                 </tr>
               </table>
@@ -245,7 +293,11 @@
         ],
         activeName: 'second',
         activeName2: 'first',
-        activeName3: 'first'
+        activeName3: 'first',
+        activeName4: 'second',
+        gameActive: false,
+        bookActive: true,
+        otherActive: false,
       }
     },
     methods: {
@@ -253,7 +305,32 @@
         document.getElementById("content").scrollIntoView({
           behavior: "smooth"
         });
-      }
+      },
+      bookIsActive() {
+        this.otherActive = false;
+        this.gameActive = false;
+        this.bookActive = true;
+      },
+      otherIsActive() {
+        this.gameActive = false;
+        this.bookActive = false;
+        this.otherActive = true;
+      },
+      gameIsActive() {
+        this.otherActive = false;
+        this.bookActive = false;
+        this.gameActive = true;
+      },
+      productTabsClick(tab, event) {
+        console.log(tab, event);
+        if(tab.name === 'first'){
+          this.gameIsActive();
+        }else if(tab.name === 'second'){
+          this.bookIsActive();
+        }else if(tab.name === 'forth') {
+          this.otherIsActive()
+        }
+      },
     }
   }
 </script>
@@ -271,7 +348,7 @@
     position: absolute;
     top: 9%;
     width: 100%;
-    height: 100%;
+    height: 95%;
     background-color: rgba(0,0,0,0.5);
   }
   .el-carousel {
@@ -282,27 +359,43 @@
   }
   #headContent {
     position: absolute;
-    top: 30%;
+    top: 15%;
     width: 60%;
     left: 20%;
-    height: 40%;
+    height: 55%;
     text-align: center;
   }
   #headContent #p1 {
     position: absolute;
-    top: 10%;
-    width: 100%;
+    top: 25%;
+    width: 30%;
+    left: 5%;
+    height: 60%;
     font-size: 44px;
     color: white;
     font-family: Arial;
   }
+  #p1 img {
+    position: absolute;
+    height: 100%;
+  }
   #headContent #p2 {
     position: absolute;
-    top: 40%;
-    width: 100%;
-    font-size: 60px;
+    top: 30%;
+    width: 70%;
+    left: 30%;
+    height: 40%;
+    text-align: center;
     color: white;
     font-family: Arial;
+  }
+  #p2 img {
+    position: absolute;
+    height: 90%;
+    top: 10%;
+    width: 53%;
+    text-align: center;
+    left: 10%;
   }
   #headContent #headBtn {
     position: absolute;
@@ -404,11 +497,6 @@
     height: 12%;
     left: 0;
   }
-  #productContent .el-image{
-    border: 1px dashed;
-    border-radius: 25px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
-  }
   #policyImg {
     position: absolute;
     width: 45%;
@@ -416,11 +504,6 @@
     left: 52.5%;
     height: 12%;
     box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
-  }
-  #guideContent .el-image {
-    border: 1px solid #999999;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
   }
   #forumImg {
     position: absolute;
@@ -435,5 +518,37 @@
     width: 50%;
     height: 15%;
     left: 2.5%;
+  }
+  #productTabs {
+    position: absolute;
+    top: 0;
+    margin-left: 2.5%;
+  }
+  #productImg {
+    position: absolute;
+    top: 0;
+    width: 45%;
+    left: 2.5%;
+    height: 100%;
+    background-color: #e6e6e6;
+    box-shadow: -8px 8px 8px rgba(0, 0, 0, 0.2);
+  }
+  #productImg .el-image {
+    position: absolute;
+    height: 100%;
+    left: 0;
+  }
+  #guideTabs {
+    position: absolute;
+    top: 0;
+    width: 45%;
+    margin-left: 2.5%;
+  }
+  #guideImg {
+    position: absolute;
+    width: 45%;
+    left: 52.5%;
+    top: 0;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
   }
 </style>
