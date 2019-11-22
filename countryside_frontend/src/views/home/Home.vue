@@ -149,7 +149,7 @@
               <table cellpadding="0" cellspacing="0" border="0" style="position: absolute;width: 100%; height: 12%;">
                 <tr>
                   <td width="50%">
-                    <el-tabs id="guideTabs" v-model="activeName4">
+                    <el-tabs id="guideTabs" v-model="activeName5">
                       <el-tab-pane label="住宿" name="first" style="text-align: left">
                         <p style="font-size: 14px;margin-bottom: 10px">不同于单 一的文字介绍，将乡村的特色、重点放在游戏当中。</p>
                         <p style="font-size: 14px;margin-bottom: 10px">通过游戏的方式 让玩家们感受到乡村的独特魅力。</p>
@@ -295,6 +295,7 @@
         activeName2: 'first',
         activeName3: 'first',
         activeName4: 'second',
+        activeName5: 'first',
         gameActive: false,
         bookActive: true,
         otherActive: false,
