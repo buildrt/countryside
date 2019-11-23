@@ -15,7 +15,7 @@
     position: absolute;
     top: 0;
     width: 60%;
-    left: 30%;
+    left: 32%;
     height: 15%;
     border-bottom: 5px solid white;
     border-bottom-left-radius: 5px;
