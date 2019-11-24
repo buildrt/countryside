@@ -34,7 +34,7 @@
           <el-submenu index="1-1-4" style="font-size: 14px;">
             <template slot="title" style="font-size: 15px">常州市</template>
             <el-menu-item index="1-1-4-1" style="font-size: 14px;">白塔村</el-menu-item>
-            <el-menu-item index="1-1-4-2" style="font-size: 14px;">牟家村</el-menu-item>
+            <el-menu-item index="/moujiaVillage" style="font-size: 14px;">牟家村</el-menu-item>
             <el-menu-item index="1-1-4-3" style="font-size: 14px;">盛泽村</el-menu-item>
           </el-submenu>
         </el-submenu>

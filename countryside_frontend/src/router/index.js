@@ -8,6 +8,10 @@ const Product = () => import('../views/product/Product');
 const Mall = () => import('../views/mall/Mall');
 const Guide = () => import('../views/guide/Guide');
 
+// 江苏
+// 常州
+const MoujiaVillage = () => import('../views/dictionary/jiangsu/changzhou/moujiaVillage/MoujiaVillage');
+
 // 1.安装插件
 Vue.use(VueRouter);
 
@@ -61,6 +65,13 @@ const routes = [
       title: '乡村微导游'
     }
   },
+  {
+    path: '/moujiaVillage',
+    component: MoujiaVillage,
+    meta: {
+      title: '牟家村'
+    }
+  }
 ];
 
 const router = new VueRouter({
