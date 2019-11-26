@@ -65,8 +65,8 @@
     position: absolute;
     top: 20%;
     height: 80%;
-    width: 90%;
-    left: 5%;
+    width: 98%;
+    left: 1%;
   }
   .el-menu .el-menu-item{
     position: relative;

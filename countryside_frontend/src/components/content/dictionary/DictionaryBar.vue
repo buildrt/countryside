@@ -128,9 +128,10 @@
   #dicRoute {
     position: absolute;
     top: 48.5%;
-    width: 60%;
+    width: 70%;
     height: 12.5%;
-    left: 20%;
+    left: 15%;
+    text-align: center;
     background-color: white;
     border-radius: 10px;
     box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.1);
@@ -216,6 +217,7 @@
     width: 20%;
     height: 100%;
     left: 5%;
+    box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.2);
   }
   #mainImg img {
     position: absolute;

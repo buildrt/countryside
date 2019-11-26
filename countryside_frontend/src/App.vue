@@ -16,6 +16,7 @@ export default {
 
 <style>
   @import "assets/css/base.css";
+  @import "common/font/font.css";
   #app {
     width: 100%;
     position: absolute;

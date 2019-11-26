@@ -39,7 +39,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    background: url("../../assets/img/product/productBg.jpg");
+    background: url("../../assets/img/home/slider1.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
