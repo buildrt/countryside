@@ -54,17 +54,15 @@
       <tr>
         <td width="45%">
           <div class="imgBorder">
-            <el-image lazy :src="require('../../../assets/img/home/product/01.png')" :preview-src-list="[require('../../../assets/img/home/product/product1.png'),require('../../../assets/img/home/product/product2.png'),require('../../../assets/img/home/product/product3.png'),require('../../../assets/img/home/product/product4.png')]" fit="fill"></el-image>
+            <el-image lazy :src="require('../../../assets/img/home/product/bag.png')" :preview-src-list="[require('../../../assets/img/home/product/bag.png')]" fit="fill"></el-image>
           </div>
         </td>
         <td>
           <div class="productIntroduce">
             <h2 style="color: #F55B1F;font-family: 华文宋体">帆布袋</h2>
-            <p style="font-size: 14px;margin-top: 6px;color: white;text-indent: 2em;">出于丰富文创产品的目的，想以一种礼物的形式赠送给对接合作的村的村委会
-              并且后期我们希望能通过该村的平台对我们制作的书签、明信片进行宣传,也可以挂在我们的网站上进行售卖，多种途径进行利用。
-              其次，考虑到大富翁、宣传画册制作的成本太高，后期不可能将所有的乡村都囊括
-              所以书签明信片就显得简单而又明了，是一个很好的选择。明信片也是由美术专业的同学负责
-              都是纯手绘的乡村的风景等;书签是有会ps技术的同学负责，在电脑上进行制作， 并印刷下来的。</p>
+            <p style="font-size: 14px;margin-top: 6px;color: white;text-indent: 2em;">帆布袋以简洁大方的白色为基调，
+              正面为“乡村宝藏”四个遒劲水墨字，提带融入乡村山水元素，旨在体现乡村的诗情画意之美。
+            </p>
           </div>
         </td>
       </tr>

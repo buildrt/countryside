@@ -104,18 +104,19 @@
                       <el-image id="book" v-show="bookActive" :src="require('../../assets/img/home/product/01.png')" :preview-src-list="[require('../../assets/img/home/product/product1.png'),require('../../assets/img/home/product/product2.png'),require('../../assets/img/home/product/product3.png'),require('../../assets/img/home/product/product4.png')]" fit="fill"></el-image>
                       <el-image id="other" v-show="otherActive" :src="require('../../assets/img/home/product/02.png')" :preview-src-list="[require('../../assets/img/home/product/picture/p1.png'),require('../../assets/img/home/product//picture/p2.png'),require('../../assets/img/home/product/picture/p3.png'),require('../../assets/img/home/product/picture/p4.png')]" fit="fill"></el-image>
                       <el-image id="game" v-show="gameActive" :src="require('../../assets/img/home/product/03.png')" :preview-src-list="[require('../../assets/img/home/product/mall1.jpg'),require('../../assets/img/home/product/mall2.jpg')]" fit="fill"></el-image>
+                      <el-image id="bag" v-show="bagActive" :src="require('../../assets/img/home/product/bag.png')" :preview-src-list="[require('../../assets/img/home/product/bag.png')]" fit="fill"></el-image>
                     </div>
                   </td>
                   <td width="50%">
                     <el-tabs id="productTabs" v-model="activeName4" @tab-click="productTabsClick">
-                      <el-tab-pane label="“村村游”大富翁" @click="gameIsActive" name="first" style="text-align: left">
+                      <el-tab-pane label="“村村游”大富翁" name="first" style="text-align: left">
                         <p style="font-size: 14px;margin-bottom: 10px">不同于单 一的文字介绍，将乡村的特色、重点放在游戏当中。</p>
                           <p style="font-size: 14px;margin-bottom: 10px">通过游戏的方式 让玩家们感受到乡村的独特魅力。</p>
                           <p style="font-size: 14px;margin-bottom: 10px">其次，本团队将大富翁以及飞行棋 的游玩模式，做了结合和改善，提高游戏的可玩性。</p>
                           <p style="font-size: 14px;margin-bottom: 10px">“村村游”大富翁是 由本团队的成员全程策划、设计、制作的，同时，团队还进行了反复 的试玩，</p>
                           <p style="font-size: 14px;margin-bottom: 10px">测试游戏的不足点，进行进一步的改善等。</p>
                       </el-tab-pane>
-                      <el-tab-pane label="明信片和书签" @click="bookIsActive" name="second" style="text-align: left">
+                      <el-tab-pane label="明信片和书签" name="second" style="text-align: left">
                         <p style="font-size: 14px;margin-bottom: 8px">出于丰富文创产品的目的，想以一种礼物的形式赠送给对接合作的村的村委会</p>
                         <p style="font-size: 14px;margin-bottom: 8px">并且后期我们希望能通过该村的平台对我们制作的书签、明信片进行宣传,也可以挂在我们的网站上进行售卖，多种途径进行利用。</p>
                         <p style="font-size: 14px;margin-bottom: 8px">其次，考虑到大富翁、宣传画册制作的成本太高，后期不可能将所有的乡村都囊括</p>
@@ -123,13 +124,10 @@
                         <p style="font-size: 14px;margin-bottom: 8px">都是纯手绘的乡村的风景等;书签是有会ps技术的同学负责，在电脑上进行制作， 并印刷下来的。</p>
                       </el-tab-pane>
                       <el-tab-pane label="帆布袋" name="third" style="text-align: left">
-                        <p style="font-size: 14px;margin-bottom: 15px">国务院办公厅印发《关于完善仲裁制度2》</p>
-                        <p style="font-size: 14px;margin-bottom: 15px">国务院办公厅关于推进养老服务发展的意见</p>
-                        <p style="font-size: 14px;margin-bottom: 15px">《关于完善仲裁制度提高仲裁公信力的若干意见》</p>
-                        <p style="font-size: 14px;margin-bottom: 15px">国务院办公厅关于推进养老服务发展的意见</p>
-                        <p style="font-size: 14px;margin-bottom: 15px">关于完善仲裁制度提高仲裁公信力的若干意见》</p>
+                        <p style="font-size: 14px;margin-bottom: 15px">帆布袋以简洁大方的白色为基调，</p>
+                        <p style="font-size: 14px;margin-bottom: 15px">正面为“乡村宝藏”四个遒劲水墨字，提带融入乡村山水元素，旨在体现乡村的诗情画意之美。</p>
                       </el-tab-pane>
-                      <el-tab-pane label="其他" @click="otherIsActive" name="forth" style="text-align: left">
+                      <el-tab-pane label="其他" name="forth" style="text-align: left">
                         <p style="font-size: 14px;margin-bottom: 10px">宣传画册为了改变一成不变的文字介绍方式，更加直观、更加吸人眼球，</p>
                         <p style="font-size: 14px;margin-bottom: 10px">于是我们创作了宣传画册</p>
                         <p style="font-size: 14px;margin-bottom: 10px">宣传画册方面我们有专业的美院同学负责，进行设计、绘画等</p>
@@ -299,6 +297,7 @@
         gameActive: false,
         bookActive: true,
         otherActive: false,
+        bagActive: false,
       }
     },
     methods: {
@@ -310,17 +309,26 @@
       bookIsActive() {
         this.otherActive = false;
         this.gameActive = false;
+        this.bagActive = false;
         this.bookActive = true;
       },
       otherIsActive() {
         this.gameActive = false;
         this.bookActive = false;
+        this.bagActive = false;
         this.otherActive = true;
       },
       gameIsActive() {
         this.otherActive = false;
         this.bookActive = false;
+        this.bagActive = false;
         this.gameActive = true;
+      },
+      bagIsActive() {
+        this.otherActive = false;
+        this.bookActive = false;
+        this.gameActive = false;
+        this.bagActive = true;
       },
       productTabsClick(tab, event) {
         console.log(tab, event);
@@ -330,6 +338,8 @@
           this.bookIsActive();
         }else if(tab.name === 'forth') {
           this.otherIsActive()
+        }else if(tab.name === 'third') {
+          this.bagIsActive();
         }
       },
     }
