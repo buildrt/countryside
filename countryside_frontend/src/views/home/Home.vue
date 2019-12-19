@@ -20,7 +20,7 @@
       </div>
       <el-carousel :interval="8000" loop height="100%" >
         <el-carousel-item v-for="item in bcImg" :key="item">
-          <el-image :src="item.img" style="background-color: rgba(0,0,0,0.2)"></el-image>
+          <el-image :src="item.img" style="background-color: rgba(0,0,0,0.1)"></el-image>
         </el-carousel-item>
       </el-carousel>
     </div>
@@ -360,7 +360,7 @@
     top: 9%;
     width: 100%;
     height: 95%;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.2);
   }
   .el-carousel {
     position: absolute;
@@ -393,9 +393,9 @@
   #headContent #p2 {
     position: absolute;
     top: 30%;
-    width: 70%;
+    width: 75%;
     left: 30%;
-    height: 40%;
+    height: 45%;
     text-align: center;
     color: white;
     font-family: Arial;

@@ -9,10 +9,10 @@
         </td>
         <td></td>
         <td width="5%">
-          <span>登录</span>
+          <el-button id="loginBtn" @click="ToLogin">登录</el-button>
         </td>
         <td width="5%">
-          <span>注册</span>
+          <el-button id="registerBtn" @click="">注册</el-button>
         </td>
         <td width="5%"></td>
       </tr>
@@ -22,7 +22,12 @@
 
 <script>
   export default {
-    name: "HomeTitleBar"
+    name: "HomeTitleBar",
+    methods: {
+      ToLogin() {
+        this.$router.push('/login');
+      }
+    }
   }
 </script>
 
@@ -44,9 +49,11 @@
     height: 100%;
     text-align: center;
   }
-  #headTable span {
+  #headTable .el-button {
     color: #d0cccc;
     font-size: 15px;
+    background-color: rgba(0,0,0,0);
+    border: 0;
   }
   #headTable span iframe {
     font-size: 15px;

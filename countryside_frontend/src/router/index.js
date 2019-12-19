@@ -2,15 +2,17 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 const Home = () => import('../views/home/Home');
+const Login = () => import('../views/login/Login');
 const Forum = () => import('../views/forum/Forum');
 const Policy = () => import('../views/policy/Policy');
 const Product = () => import('../views/product/Product');
 const Mall = () => import('../views/mall/Mall');
-const Guide = () => import('../views/guide/Guide');
 
 // 江苏
 // 常州
 const MoujiaVillage = () => import('../views/dictionary/jiangsu/changzhou/moujiaVillage/MoujiaVillage');
+const MoujiaGuide = () => import('../views/guide/jiangsu/changzhou/moujiaVillage/MoujiaGuide');
+
 
 // 1.安装插件
 Vue.use(VueRouter);
@@ -28,6 +30,13 @@ const routes = [
     component: Home,
     meta: {
       title: '首页'
+    }
+  },
+  {
+    path: '/login',
+    component: Login,
+    meta: {
+      title: '登录'
     }
   },
   {
@@ -59,17 +68,17 @@ const routes = [
     }
   },
   {
-    path: '/guide',
-    component: Guide,
+    path: '/moujiaGuide',
+    component: MoujiaGuide,
     meta: {
-      title: '乡村微导游'
+      title: '牟家村微导游'
     }
   },
   {
     path: '/moujiaVillage',
     component: MoujiaVillage,
     meta: {
-      title: '牟家村'
+      title: '牟家村词典'
     }
   }
 ];
