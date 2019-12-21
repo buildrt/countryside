@@ -1,15 +1,21 @@
 <template>
   <div id="policy">
-    政策通晓
+    <policy-title-bar></policy-title-bar>
   </div>
 </template>
 
 <script>
+  import PolicyTitleBar from "../../components/content/policy/PolicyTitleBar";
   export default {
-    name: "Policy"
+    name: "Policy",
+    components: {PolicyTitleBar}
   }
 </script>
 
 <style scoped>
-
+  #policy {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
 </style>
