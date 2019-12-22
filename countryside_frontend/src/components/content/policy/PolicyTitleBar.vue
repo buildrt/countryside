@@ -1,23 +1,18 @@
 <template>
   <div id="policyTitleBar">
-    <img id="policyTitleImg" src="../../../assets/img/policy/policyTitleImg.png" alt="">
-    <img id="policyTitle" src="../../../assets/img/policy/title.png" alt="">
-    <img id="policyLogo" src="../../../assets/img/policy/logo.png" alt="">
-    <img id="policyCharacter" src="../../../assets/img/policy/policyCharacter.png" alt="">
-    <el-menu
-      :default-active="this.$route.path"
-      mode="horizontal"
-      router
-      @select="handleSelect"
-      background-color="rgba(0,0,0,0)"
-      text-color="#fff"
-      active-text-color="#0fdfe2">
-      <el-menu-item index="/home">首页</el-menu-item>
-      <el-menu-item index="/product">文创产品</el-menu-item>
-      <el-menu-item index="/mall">网上商城</el-menu-item>
-      <el-menu-item index="/policy">政策通晓</el-menu-item>
-      <el-menu-item index="/forum">大学生论坛</el-menu-item>
-    </el-menu>
+    <img id="policyTitleImg" src="../../../assets/img/policy/policyTitleBar/header_bg.jpg" alt="">
+    <img id="policyTitle" src="../../../assets/img/policy/policyTitleBar/title.png" alt="">
+    <img id="policyLogo" src="../../../assets/img/policy/policyTitleBar/logo.png" alt="">
+    <img id="policyCharacter" src="../../../assets/img/policy/policyTitleBar/policyCharacter.png" alt="">
+    <img id="timinqing" src="../../../assets/img/policy/policyTitleBar/timinqing.png"/>
+    <div id="policySearch">
+      <el-form>
+        <el-form-item>
+          <el-input prefix-icon="el-icon-search"></el-input>
+          <el-button type="primary">搜索</el-button>
+        </el-form-item>
+      </el-form>
+    </div>
   </div>
 </template>
 
@@ -29,7 +24,7 @@
 
 <style scoped>
   #policyTitleBar {
-    position: relative;
+    position: absolute;
     width: 100%;
     height: 25%;
     overflow: hidden;
@@ -41,23 +36,12 @@
     left: 0;
     z-index: 0;
   }
-  .el-menu {
-    position: absolute;
-    top: 10%;
-    height: auto;
-    right: 5%;
-    border: 0;
-  }
-  .el-menu .el-menu-item{
-    position: relative;
-    text-align: center;
-    font-size: 15px;
-    width: 100px;
-  }
+
   #policyTitle {
     position: absolute;
     top: 0;
-    width: 20%;
+    width: 18%;
+    height: 60%;
     /*border: 1px solid black;*/
     left: 8%;
   }
@@ -70,7 +54,32 @@
   #policyCharacter {
     position: absolute;
     top: 55%;
-    left: 15%;
+    left: 20%;
     width: 15%;
+  }
+  #timinqing {
+    position: absolute;
+    right: 5%;
+    top: 25%;
+  }
+  #policySearch {
+    position: absolute;
+    right: 5%;
+    width: 30%;
+    height: 30%;
+    bottom: 5%;
+  }
+  #policySearch .el-input {
+    position: absolute;
+    width: 60%;
+    left: 10%;
+  }
+  #policySearch .el-button {
+    position: absolute;
+    text-align: center;
+    width: 20%;
+    left: 75%;
+    background-color: #E43635;
+    border: 0;
   }
 </style>

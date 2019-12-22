@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 
 const Home = () => import('../views/home/Home');
 const Login = () => import('../views/login/Login');
+const Register = () => import('../views/register/Register');
 const Forum = () => import('../views/forum/Forum');
 const Policy = () => import('../views/policy/Policy');
 const Product = () => import('../views/product/Product');
@@ -37,6 +38,13 @@ const routes = [
     component: Login,
     meta: {
       title: '登录'
+    }
+  },
+  {
+    path: '/register',
+    component: Register,
+    meta: {
+      title: '注册'
     }
   },
   {

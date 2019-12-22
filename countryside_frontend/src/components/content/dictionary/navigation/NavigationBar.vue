@@ -103,6 +103,7 @@
     height: 80%;
     width: 98%;
     left: 1%;
+    border: 0;
   }
   .el-menu .el-menu-item{
     position: relative;
