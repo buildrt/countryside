@@ -9,10 +9,12 @@
         </td>
         <td></td>
         <td width="5%">
-          <el-button id="loginBtn" @click="ToLogin">登录</el-button>
+          <el-button id="loginBtn" @click="ToLogin" v-if="this.$store.getters.isLogin === false">登录</el-button>
+          <el-button v-else>{{this.$store.getters.getUserName}}</el-button>
         </td>
         <td width="5%">
-          <el-button id="registerBtn" @click="">注册</el-button>
+          <el-button id="registerBtn" @click="ToRegister" v-if="this.$store.getters.isLogin === false">注册</el-button>
+          <el-button @click="logOut" v-else>退出系统</el-button>
         </td>
         <td width="5%"></td>
       </tr>
@@ -25,8 +27,16 @@
     name: "HomeTitleBar",
     methods: {
       ToLogin() {
-        this.$router.push('/login');
-      }
+        this.$router.replace('/login');
+      },
+      ToRegister() {
+        this.$router.replace('/register');
+      },
+      logOut() {
+        this.$store.commit('setIsLogin', false);
+        window.localStorage.setItem('loginJudge', 'false');
+        this.$router.replace('/home');
+      },
     }
   }
 </script>

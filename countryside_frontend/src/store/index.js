@@ -9,7 +9,9 @@ import getters from './getters'
 Vue.use(Vuex);
 
 const state = {
-
+  loginJudge: false, // 判断登录，注册和个人页面的出现关系,
+  userName: '',
+  passWord: '',
 };
 
 const store = new Vuex.Store({

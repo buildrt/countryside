@@ -37,7 +37,7 @@
     <transition name="el-zoom-in-bottom">
       <div id="result" v-show="resultShow">
         <p>登录成功</p>
-        <p>欢迎你XXX</p>
+        <p>欢迎你</p>
       </div>
     </transition>
   </div>
@@ -47,6 +47,7 @@
   import bg1 from "../../assets/img/home/slider1.jpg"
   import bg2 from "../../assets/img/home/slider2.jpg"
   import bg3 from "../../assets/img/home/slider3.jpg"
+  import {login} from "../../network/login/login";
 
   export default {
     name: "Login",
@@ -79,43 +80,62 @@
         this.$refs[forName].validate(valid => {
           console.log(valid);
           if (valid) {
-            this.username = document.getElementById('uname').value;
-            this.password = document.getElementById('pwd').value;
-            console.log(this.username, this.password);
+            let username = document.getElementById('uname').value;
+            let password = document.getElementById('pwd').value;
+            console.log(username,password);
             this.formShow = false;
             this.confirmShow = true;
             setTimeout(() => {
               this.confirmShow = false;
-              if (1 === 1) {
-                setTimeout(() => {
-                  this.resultShow = true;
+              // if (1 === 1) {
+              //   setTimeout(() => {
+              //     this.resultShow = true;
+              //     setTimeout(() => {
+              //       this.$store.commit('setIsLogin', true);
+              //       this.$store.commit('setUserName', username);
+              //       this.$store.commit('setPassWord', password);
+              //       window.localStorage.setItem('loginJudge', 'true');
+              //       window.localStorage.setItem('userName', username);
+              //       window.localStorage.setItem('passWord', password);
+              //       this.$router.replace('/home');
+              //     },1000);
+              //   },300)
+              // } else {
+              //   setTimeout(() => {
+              //     this.formShow = true;
+              //     this.$alert('用户名密码错误', {
+              //       confirmButtonText: '确定',
+              //     });
+              //   },300)
+              // }
+              login(this.username, this.password).then(res => {
+                console.log(res);
+                if (res === 1) {
                   setTimeout(() => {
-                    this.$store.commit('setIsLogin', true);
-                    window.localStorage.setItem('loginJudge', 'true');
-                    this.$router.replace('/home');
-                  },1000);
-                },300)
-              } else {
-                setTimeout(() => {
-                  this.formShow = true;
-                  this.$alert('用户名密码错误', {
-                    confirmButtonText: '确定',
-                  });
-                },300)
-              }
+                    this.resultShow = true;
+                    setTimeout(() => {
+                      this.$store.commit('setIsLogin', true);
+                      this.$store.commit('setUserName', username);
+                      this.$store.commit('setPassWord', password);
+                      window.localStorage.setItem('loginJudge', 'true');
+                      window.localStorage.setItem('userName', username);
+                      window.localStorage.setItem('passWord', password);
+                      this.$router.replace('/home');
+                    },1000);
+                  },300)
+                }else {
+                  setTimeout(() => {
+                    this.formShow = true;
+                    this.$alert('用户名密码错误', {
+                      confirmButtonText: '确定',
+                    });
+                  },300)
+                }
+              }).catch(err => {
+                alert("登录失败");
+                console.log(err);
+              })
             },1000);
-            // login(this.username, this.password).then(res => {
-            //   console.log(res);
-            //   if (res === 1) {
-            //     alert("登录成功");
-            //     this.$router.push('/home');
-            //   }else {
-            //     alert("登录失败");
-            //   }
-            // }).catch(err => {
-            //   alert("登录失败");
-            //   console.log(err);
-            // })
           }
         })
       },
@@ -254,6 +274,7 @@
     left: 36%;
     width: 28%;
     height: 85%;
+    text-align: center;
     /*padding-left: 4%;*/
     background: linear-gradient(230deg, rgba(53, 57, 74, 0.6) 0%, rgb(0, 0, 0) 90%);
     box-shadow: -15px 15px 15px rgba(6, 17, 47, 0.7);
@@ -261,7 +282,7 @@
   #result p {
     position: relative;
     top: 25%;
-    left: 38%;
+    /*left: 38%;*/
     font-size: 18px;
     margin-bottom: 30px;
     color: #dcdfe6;

@@ -14,15 +14,6 @@
         <el-form-item prop="username" id="userItem">
           <el-input class="regInput" prefix-icon="el-icon-user" id="uname" size="large" v-model.trim="regForm.username" autocomplete="off" placeholder="用户名"></el-input>
         </el-form-item>
-        <el-form-item prop="phone" id="phoneItem">
-          <el-input class="regInput" prefix-icon="el-icon-mobile-phone" id="phone" size="large" v-model.trim="regForm.phone" autocomplete="off" placeholder="手机号码"></el-input>
-        </el-form-item>
-        <el-form-item prop="gender" id="genderItem">
-          <el-radio-group v-model="regForm.gender" id="gender" size="mini">
-            <el-radio label='0' @click="RadioOnClick0">男</el-radio>
-            <el-radio label='1' @click="RadioOnClick1">女</el-radio>
-          </el-radio-group>
-        </el-form-item>
         <el-form-item prop="password" id="passwordItem">
           <el-input class="regInput" prefix-icon="el-icon-lock" id="pwd" type="password" size="large" v-model.trim="regForm.password" show-password autocomplete="off" placeholder="密码"></el-input>
         </el-form-item>
@@ -78,8 +69,6 @@
           username: '',
           password: '',
           password2: '',
-          phone: '',
-          gender: 0
         },
         regRules: {
           username: [
@@ -92,14 +81,8 @@
           ],
           password2: [
             { required: true, message: '请输入确认密码', trigger: 'blur' },
-            { validator: validatePass2, trigger: 'blur' }          ],
-          phone: [
-            { required: true, message: '请输入手机号码', trigger: 'blur' },
-            { pattern: /^1[34578]\d{9}$/, message: '请输入正确的手机号码', trigger: 'blur'}
+            { validator: validatePass2, trigger: 'blur' }
           ],
-          gender: [
-            { required: true, message: '请输入性别', trigger: 'blur' },
-          ]
         }
       }
     },
@@ -109,11 +92,10 @@
           console.log(valid);
           if (valid) {
             this.regForm.username = document.getElementById('uname').value;
-            this.regForm.phone = document.getElementById('phone').value;
             this.regForm.password = document.getElementById('pwd').value;
             this.regForm.password2 = document.getElementById('pwd2').value;
-            console.log(this.regForm.username, this.regForm.phone,this.regForm.gender,this.regForm.password,this.regForm.password2);
-            register(this.regForm.username,this.regForm.password,this.regForm.phone,this.regForm.gender).then(res => {
+            console.log(this.regForm.username,this.regForm.password,this.regForm.password2);
+            register(this.regForm.username,this.regForm.password).then(res => {
               console.log(res);
               if (res === 1) {
                 alert("注册成功");
@@ -179,7 +161,7 @@
   }
   .el-form {
     position: relative;
-    top: 30%;
+    top: 40%;
     width: 100%;
     height: 70%;
     /*border: 1px solid black;*/
@@ -194,12 +176,6 @@
     width: 80%;
     text-align: center;
   }
-  #phoneItem {
-    position: relative;
-    left: 15%;
-    text-align: center;
-    width: 80%;
-  }
   #passwordItem {
     position: relative;
     left: 15%;
@@ -211,10 +187,6 @@
     left: 15%;
     text-align: center;
     width: 80%;
-  }
-  #genderItem {
-    position: relative;
-    left: 18%;
   }
   #subItem {
     position: relative;

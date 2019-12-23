@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import store from '../store/index'
 
 const Home = () => import('../views/home/Home');
 const Login = () => import('../views/login/Login');
@@ -91,10 +92,18 @@ const routes = [
   }
 ];
 
+if (window.localStorage.getItem('loginJudge') === 'true') {
+  store.commit('setIsLogin',Boolean(window.localStorage.getItem('loginJudge')));
+  store.commit('setUserName', window.localStorage.getItem('userName'));
+  store.commit('setPassWord', window.localStorage.getItem('passWord'));
+}
+
 const router = new VueRouter({
   routes,
   mode: 'hash'
 });
+
+
 
 //全局导航守卫
 router.beforeEach((to, from, next) => {
