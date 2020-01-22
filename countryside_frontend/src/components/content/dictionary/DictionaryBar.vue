@@ -28,7 +28,15 @@
             <div id="hisIntrBC"></div>
             <div id="hisIntro"><slot name="hisIntroContent"></slot></div>
           </div>
-          <div id="historyTour"></div>
+          <div id="historyTour">
+            <table cellspacing="0" cellpadding="0" border="0" style="width: 100%;height: 100%;text-align: center">
+              <tr>
+                <td width="33%"><slot name="histourImg1"></slot></td>
+                <td width="33%"><slot name="histourImg2"></slot></td>
+                <td><slot name="histourImg3"></slot></td>
+              </tr>
+            </table>
+          </div>
         </div>
       </div>
       <div id="villageFood">
