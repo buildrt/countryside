@@ -49,10 +49,10 @@
   }
   #policyCenter #character2 {
     position: absolute;
-    width: 20%;
-    top: 20%;
-    left: 40%;
-    height: 60%;
+    width: 35%;
+    top: 10%;
+    left: 32.5%;
+    height: 80%;
   }
   #policyFoot {
     position: absolute;

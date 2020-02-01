@@ -49,8 +49,8 @@
           <el-menu-item index="2-1-1-4" style="font-size: 14px;">不老村</el-menu-item>
         </el-submenu>
         <el-submenu index="2-1-2" style="font-size: 14px;">
-          <template slot="title" style="font-size: 15px">常熟市</template>
-          <el-menu-item index="2-1-2-1" style="font-size: 14px;">蒋巷村</el-menu-item>
+          <template slot="title" style="font-size: 15px">苏州市</template>
+          <el-menu-item index="2-1-2-1" style="font-size: 14px;">盛泽村</el-menu-item>
         </el-submenu>
         <el-submenu index="2-1-3" style="font-size: 14px;">
           <template slot="title" style="font-size: 15px">无锡市</template>

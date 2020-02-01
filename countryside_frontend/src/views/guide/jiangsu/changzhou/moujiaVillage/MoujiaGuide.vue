@@ -11,12 +11,12 @@
       <p slot="cateringName3">美食3</p>
       <img name="cateringImg4" slot="cateringImg4" src="../../../../../assets/img/guide/jiangsu/changzhou/moujiaVallage/catering4.jpg"/>
       <p slot="cateringName4">美食4</p>
-      <el-carousel :interval="4000" type="card" slot="travelImg">
-        <el-carousel-item v-for="item in travelImg" :key="item">
-          <el-image :src="item.img"></el-image>
-        </el-carousel-item>
-      </el-carousel>
-      <el-carousel :interval="4000" type="card" slot="trafficImg" height="350px">
+      <!--<el-carousel :interval="4000" type="card" slot="travelImg">-->
+        <!--<el-carousel-item v-for="item in travelImg" :key="item">-->
+          <!--<el-image :src="item.img"></el-image>-->
+        <!--</el-carousel-item>-->
+      <!--</el-carousel>-->
+      <el-carousel :interval="4000" slot="trafficImg" height="350px">
         <el-carousel-item v-for="item in trafficImg" :key="item">
           <el-image :src="item.img"></el-image>
         </el-carousel-item>
@@ -55,8 +55,8 @@
   import catering3 from "../../../../../assets/img/guide/jiangsu/changzhou/moujiaVallage/catering3.jpg"
   import catering4 from "../../../../../assets/img/guide/jiangsu/changzhou/moujiaVallage/catering4.jpg"
   import plane from "../../../../../assets/img/guide/jiangsu/changzhou/moujiaVallage/traffic/plane.png"
-  import bus from "../../../../../assets/img/guide/jiangsu/changzhou/moujiaVallage/traffic/bus.png"
-  import train from "../../../../../assets/img/guide/jiangsu/changzhou/moujiaVallage/traffic/train.png"
+  import bus from "../../../../../assets/img/guide/jiangsu/changzhou/moujiaVallage/traffic/bus.jpg"
+  import train from "../../../../../assets/img/guide/jiangsu/changzhou/moujiaVallage/traffic/train.jpg"
   export default {
     name: "MoujiaGuide",
     components: {GuideBar},
@@ -76,7 +76,6 @@
         trafficImg: [
           {img: bus},
           {img: train},
-          {img: plane},
         ]
       }
     }

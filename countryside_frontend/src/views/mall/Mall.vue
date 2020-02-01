@@ -7,8 +7,8 @@
       <div class="product_tab_btn">
         <table cellpadding="0" cellspacing="0" border="0" style="width: 100%; height: 100%;text-align: center">
           <tr>
-            <td width="25%"><el-button round @click="selectPostcard">明信片</el-button></td>
-            <td width="25%"><el-button round @click="selectPicture">宣传画册</el-button></td>
+            <td width="25%"><el-button round @click="selectPostcard">书 签</el-button></td>
+            <td width="25%"><el-button round @click="selectPicture">明信片</el-button></td>
             <td width="25%"><el-button round @click="selectBag">帆布袋</el-button></td>
             <td width="25%"><el-button round @click="selectGame">大富翁</el-button></td>
           </tr>
@@ -21,8 +21,8 @@
               <div id="post1">
                 <el-image style="height: 80%" :src="require('../../assets/img/mall/post1.png')" fit="fill" :preview-src-list="[require('../../assets/img/mall/post1.png')]"></el-image>
                 <div style="position:absolute;height: 27%;width:100%;top: 73%;z-index: 1;text-align: center;">
-                  <p style="font-family: 华文行楷;color: black;font-size: 25px">白塔村明信片</p><br>
-                  <p style="color: #f53737;font-size: 18px">￥10</p>
+                  <p style="font-family: 华文行楷;color: black;font-size: 25px">白塔村书签</p><br>
+                  <p style="color: #f53737;font-size: 18px">￥3</p>
                   <el-button type="primary" size="mini" style="position:absolute; bottom: 8%;right: 2%">加入购物车</el-button>
                 </div>
               </div>
@@ -31,8 +31,8 @@
               <div id="post2">
                 <el-image style="height: 80%" :src="require('../../assets/img/mall/post2.png')" fit="fill" :preview-src-list="[require('../../assets/img/mall/post2.png')]"></el-image>
                 <div style="position:absolute;height: 27%;width:100%;top: 73%;z-index: 1;text-align: center;">
-                  <p style="font-family: 华文行楷;color: black;font-size: 25px">白塔村明信片</p><br>
-                  <p style="color: #f53737;font-size: 18px">￥10</p>
+                  <p style="font-family: 华文行楷;color: black;font-size: 25px">白塔村书签</p><br>
+                  <p style="color: #f53737;font-size: 18px">￥3</p>
                   <el-button type="primary" size="mini" style="position:absolute; bottom: 8%;right: 2%">加入购物车</el-button>
                 </div>
               </div>
@@ -41,8 +41,8 @@
               <div id="post3">
                 <el-image style="height: 80%" :src="require('../../assets/img/mall/post3.png')" fit="fill" :preview-src-list="[require('../../assets/img/mall/post3.png')]"></el-image>
                 <div style="position:absolute;height: 27%;width:100%;top: 73%;z-index: 1;text-align: center;">
-                  <p style="font-family: 华文行楷;color: black;font-size: 25px">白塔村明信片</p><br>
-                  <p style="color: #f53737;font-size: 18px">￥10</p>
+                  <p style="font-family: 华文行楷;color: black;font-size: 25px">白塔村书签</p><br>
+                  <p style="color: #f53737;font-size: 18px">￥3</p>
                   <el-button type="primary" size="mini" style="position:absolute; bottom: 8%;right: 2%">加入购物车</el-button>
                 </div>
               </div>
@@ -51,8 +51,8 @@
               <div id="post4">
                 <el-image style="height: 80%" :src="require('../../assets/img/mall/post4.png')" fit="fill" :preview-src-list="[require('../../assets/img/mall/post4.png')]"></el-image>
                 <div style="position:absolute;height: 27%;width:100%;top: 73%;z-index: 1;text-align: center;">
-                  <p style="font-family: 华文行楷;color: black;font-size: 25px">白塔村明信片</p><br>
-                  <p style="color: #f53737;font-size: 18px">￥10</p>
+                  <p style="font-family: 华文行楷;color: black;font-size: 25px">白塔村书签</p><br>
+                  <p style="color: #f53737;font-size: 18px">￥3</p>
                   <el-button type="primary" size="mini" style="position:absolute; bottom: 8%;right: 2%">加入购物车</el-button>
                 </div>
               </div>
@@ -65,40 +65,40 @@
           <tr>
             <td width="25%">
               <div id="p1">
-                <el-image style="position:absolute;top: 5%;width: 95%;left: 2.5%;border-radius: 15px" :src="require('../../assets/img/mall/p1.png')" fit="fill" :preview-src-list="[require('../../assets/img/mall/p1.png')]"></el-image>
+                <el-image style="position:absolute;top: 5%;width: 95%;left: 2.5%;border-radius: 15px" :src="require('../../assets/img/mall/p1.jpg')" fit="fill" :preview-src-list="[require('../../assets/img/mall/p1.jpg')]"></el-image>
                 <div style="position:absolute;height: 27%;width:100%;top: 73%;z-index: 1;text-align: center;">
-                  <p style="font-family: 华文行楷;color: black;font-size: 25px">宣传画册</p><br>
-                  <p style="color: #f53737;font-size: 18px">￥10</p>
+                  <br><br><br>
+                  <p style="color: #f53737;font-size: 18px">￥5</p>
                   <el-button type="primary" size="mini" style="position:absolute; bottom: 8%;right: 2%">加入购物车</el-button>
                 </div>
               </div>
             </td>
             <td width="25%">
               <div id="p2">
-                <el-image style="position:absolute;top: 5%;width: 95%;left: 2.5%;border-radius: 15px" :src="require('../../assets/img/mall/p2.png')" fit="fill" :preview-src-list="[require('../../assets/img/mall/p2.png')]"></el-image>
+                <el-image style="position:absolute;top: 5%;width: 95%;left: 2.5%;border-radius: 15px" :src="require('../../assets/img/mall/p2.jpg')" fit="fill" :preview-src-list="[require('../../assets/img/mall/p2.jpg')]"></el-image>
                 <div style="position:absolute;height: 27%;width:100%;top: 73%;z-index: 1;text-align: center;">
-                  <p style="font-family: 华文行楷;color: black;font-size: 25px">宣传画册</p><br>
-                  <p style="color: #f53737;font-size: 18px">￥10</p>
+                  <br><br><br>
+                  <p style="color: #f53737;font-size: 18px">￥5</p>
                   <el-button type="primary" size="mini" style="position:absolute; bottom: 8%;right: 2%">加入购物车</el-button>
                 </div>
               </div>
             </td>
             <td width="25%">
               <div id="p3">
-                <el-image style="position:absolute;top: 5%;width: 95%;left: 2.5%;border-radius: 15px" :src="require('../../assets/img/mall/p3.png')" fit="fill" :preview-src-list="[require('../../assets/img/mall/p3.png')]"></el-image>
+                <el-image style="position:absolute;top: 5%;width: 95%;left: 2.5%;border-radius: 15px" :src="require('../../assets/img/mall/p3.jpg')" fit="fill" :preview-src-list="[require('../../assets/img/mall/p3.jpg')]"></el-image>
                 <div style="position:absolute;height: 27%;width:100%;top: 73%;z-index: 1;text-align: center;">
-                  <p style="font-family: 华文行楷;color: black;font-size: 25px">宣传画册</p><br>
-                  <p style="color: #f53737;font-size: 18px">￥10</p>
+                  <br><br><br>
+                  <p style="color: #f53737;font-size: 18px;">￥5</p>
                   <el-button type="primary" size="mini" style="position:absolute; bottom: 8%;right: 2%">加入购物车</el-button>
                 </div>
               </div>
             </td>
             <td width="25%">
               <div id="p4">
-                <el-image style="position:absolute;top: 5%;width: 95%;left: 2.5%;border-radius: 15px" :src="require('../../assets/img/mall/p4.png')" fit="fill" :preview-src-list="[require('../../assets/img/mall/p4.png')]"></el-image>
+                <el-image style="position:absolute;top: 5%;width: 95%;left: 2.5%;border-radius: 15px" :src="require('../../assets/img/mall/p4.jpg')" fit="fill" :preview-src-list="[require('../../assets/img/mall/p4.jpg')]"></el-image>
                 <div style="position:absolute;height: 27%;width:100%;top: 73%;z-index: 1;text-align: center;">
-                  <p style="font-family: 华文行楷;color: black;font-size: 25px">宣传画册</p><br>
-                  <p style="color: #f53737;font-size: 18px">￥10</p>
+                  <br><br><br>
+                  <p style="color: #f53737;font-size: 18px">￥</p>
                   <el-button type="primary" size="mini" style="position:absolute; bottom: 8%;right: 2%">加入购物车</el-button>
                 </div>
               </div>
@@ -112,7 +112,7 @@
         </div>
         <div style="position:absolute;left: 55%;height: 27%;width:30%;top: 25%;z-index: 1;text-align: center;border: 1px solid #bfbfbf">
           <p style="font-family: 华文行楷;color: black;font-size: 25px">帆布袋</p><br>
-          <p style="color: #f53737;font-size: 18px">￥10</p>
+          <p style="color: #f53737;font-size: 18px">￥25</p>
           <el-button type="primary" size="mini" style="position:absolute; bottom: 8%;right: 10%">加入购物车</el-button>
         </div>
       </div>
@@ -122,7 +122,7 @@
         </div>
         <div style="position:absolute;left: 55%;height: 27%;width:30%;top: 25%;z-index: 1;text-align: center;border: 1px solid #bfbfbf">
           <p style="font-family: 华文行楷;color: black;font-size: 25px">大富翁</p><br>
-          <p style="color: #f53737;font-size: 18px">￥10</p>
+          <p style="color: #f53737;font-size: 18px">￥88</p>
           <el-button type="primary" size="mini" style="position:absolute; bottom: 8%;right: 10%">加入购物车</el-button>
         </div>
       </div>

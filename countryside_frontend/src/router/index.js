@@ -15,6 +15,14 @@ const Mall = () => import('../views/mall/Mall');
 const MoujiaVillage = () => import('../views/dictionary/jiangsu/changzhou/moujiaVillage/MoujiaVillage');
 const MoujiaGuide = () => import('../views/guide/jiangsu/changzhou/moujiaVillage/MoujiaGuide');
 
+//扬州
+const YanhuVillage = () => import('../views/dictionary/jiangsu/yangzhou/yanhuVillage/YanhuVillage');
+const YanhuGuide = () => import('../views/guide/jiangsu/yangzhou/yanhuVillage/YanhuGuide');
+//无锡
+const BaitaVillage = () => import('../views/dictionary/jiangsu/wuxi/baitaVillage/BaitaVillage');
+
+//苏州
+const ShengzeVillage = () => import('../views/dictionary/jiangsu/suzhou/shengzeVillage/ShengzeVillage');
 
 // 1.安装插件
 Vue.use(VueRouter);
@@ -89,7 +97,36 @@ const routes = [
     meta: {
       title: '牟家村词典'
     }
+  },
+  {
+    path: '/yanhuVillage',
+    component: YanhuVillage,
+    meta: {
+      title: '沿湖村词典'
+    }
+  },
+  {
+    path: '/yanhuGuide',
+    component: YanhuGuide,
+    meta: {
+      title: '沿湖村微导游'
+    }
+  },
+  {
+    path: '/baitaVillage',
+    component: BaitaVillage,
+    meta: {
+      title: '白塔村词典'
+    }
+  },
+  {
+    path: '/shengzeVillage',
+    component: ShengzeVillage,
+    meta: {
+      title: '盛泽村词典'
+    }
   }
+
 ];
 
 if (window.localStorage.getItem('loginJudge') === 'true') {

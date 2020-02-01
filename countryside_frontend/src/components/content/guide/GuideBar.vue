@@ -38,24 +38,24 @@
           </table>
         </div>
       </div>
-      <div id="travel">
-        <div id="travelTitle">
-          <span style="font-size: 25px;font-family: 华文行楷;color: black">旅游</span>
-          <img id="travelBg" src="../../../assets/img/guide/jiangsu/changzhou/moujiaVallage/travel.png" alt="">
-        </div>
-        <div id="travelContent">
-          <slot name="travelImg"></slot>
-        </div>
-      </div>
+      <!--<div id="travel">-->
+        <!--<div id="travelTitle">-->
+          <!--<span style="font-size: 25px;font-family: 华文行楷;color: black">旅游</span>-->
+          <!--<img id="travelBg" src="../../../assets/img/guide/jiangsu/changzhou/moujiaVallage/travel.png" alt="">-->
+        <!--</div>-->
+        <!--<div id="travelContent">-->
+          <!--<slot name="travelImg"></slot>-->
+        <!--</div>-->
+      <!--</div>-->
       <div id="traffic">
         <div id="trafficTitle">
-          <span style="font-size: 25px;font-family: 华文行楷;color: black">交通方式</span>
-          <img id="trafficBg" src="../../../assets/img/guide/jiangsu/changzhou/moujiaVallage/traffic.png" alt="">
+          <span style="font-size: 25px;font-family: 华文行楷;color: black">旅学</span>
+          <img id="trafficBg" src="../../../assets/img/guide/jiangsu/yangzhou/yanhuVillage/studies.png" alt="">
         </div>
         <div id="trafficContent">
           <slot name="trafficImg"></slot>
           <div id="trafficIntro">
-            <p id="tIntroTitle">多种交通方式供您选择</p>
+            <p id="tIntroTitle"><slot name="tIntroContentTitle"></slot></p>
             <div id="tIntroContent"><slot name="tIntroContent"></slot></div>
           </div>
         </div>
@@ -69,6 +69,7 @@
           <div id="hotelImg1">
             <slot name="hotelImg1"></slot>
             <div id="hotelIntro1">
+              <br>
               <slot name="hotelIntro1"></slot>
               <slot name="hotelLocal1"></slot>
               <slot name="hotelPrice1"></slot>
@@ -77,6 +78,7 @@
           <div id="hotelImg2">
             <slot name="hotelImg2"></slot>
             <div id="hotelIntro2">
+              <br>
               <slot name="hotelIntro2"></slot>
               <slot name="hotelLocal2"></slot>
               <slot name="hotelPrice2"></slot>
@@ -85,6 +87,7 @@
           <div id="hotelImg3">
             <slot name="hotelImg3"></slot>
             <div id="hotelIntro3">
+              <br>
               <slot name="hotelIntro3"></slot>
               <slot name="hotelLocal3"></slot>
               <slot name="hotelPrice3"></slot>
@@ -150,7 +153,7 @@
   #guideContent {
      top: 55%;
      width: 100%;
-     height: 520%;
+     height: 400%;
      background-color: white;
    }
   #catering {
@@ -316,7 +319,7 @@
   }
   #traffic {
     position: absolute;
-    top: 260%;
+    top: 165%;
     /*border: 1px solid black;*/
     width: 80%;
     left: 10%;
@@ -388,10 +391,12 @@
     width: 100%;
     /*border: black 1px solid;*/
     height: 60%;
+    text-align: left;
+    text-indent: 2em;
   }
   #hotel {
     position: absolute;
-    top: 360%;
+    top: 260%;
     /*border: 1px solid black;*/
     width: 80%;
     left: 10%;
