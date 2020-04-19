@@ -30,9 +30,9 @@
 </template>
 
 <script>
-  import bg1 from "../../assets/img/home/slider1.jpg"
-  import bg2 from "../../assets/img/home/slider2.jpg"
-  import bg3 from "../../assets/img/home/slider3.jpg"
+  import bg1 from "../../assets/img/login/loginBac1.png"
+  import bg2 from "../../assets/img/login/loginBac2.png"
+  import bg3 from "../../assets/img/login/loginBac3.png"
   export default {
     name: "Register",
     data() {

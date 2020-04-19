@@ -20,7 +20,7 @@
       </div>
       <el-carousel :interval="8000" loop height="100%" >
         <el-carousel-item v-for="item in bcImg" :key="item">
-          <el-image :src="item.img" style="background-color: rgba(0,0,0,0.1)"></el-image>
+          <el-image :src="item.img" style="background-color: rgba(0,0,0,0.1);width: 100%;"></el-image>
         </el-carousel-item>
       </el-carousel>
     </div>
@@ -30,7 +30,7 @@
       <table id="contentTable" cellspacing="0" cellpadding="0" border="0">
         <tr>
           <td width="50%">
-            <img id="newsImg" src="../../assets/img/home/slider1.jpg" alt="">
+            <img id="newsImg" src="../../assets/img/home/yaowen.jpg" alt="">
           </td>
           <td>
             <el-tabs id="newsTabs" v-model="activeName" @tab-click="handleClick">
@@ -91,7 +91,7 @@
             </el-tabs>
           </td>
           <td>
-            <img id="policyImg" src="../../assets/img/home/slider2.jpg" alt="">
+            <img id="policyImg" src="../../assets/img/home/policy.png" alt="">
           </td>
         </tr>
         <tr>
@@ -183,7 +183,7 @@
         </tr>
         <tr>
           <td width="50%">
-            <img id="forumImg" src="../../assets/img/home/slider3.jpg" alt="">
+            <img id="forumImg" src="../../assets/img/home/luntan.png" alt="">
           </td>
           <td>
             <el-tabs v-model="activeName3" style="position: absolute; top: 67%; padding-left: 5%">
@@ -289,6 +289,7 @@
           {img: bg2},
           {img: bg3}
         ],
+        fits: ['fill', 'contain', 'cover', 'none', 'scale-down'],
         activeName: 'second',
         activeName2: 'first',
         activeName3: 'first',

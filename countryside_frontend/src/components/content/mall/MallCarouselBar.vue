@@ -1,5 +1,5 @@
 <template>
-  <el-carousel trigger="click" height="100%">
+  <el-carousel trigger="click" type="card">
     <el-carousel-item v-for="item in mallBcImg" :key="item">
       <el-image :src="item.img"></el-image>
     </el-carousel-item>
@@ -7,9 +7,9 @@
 </template>
 
 <script>
-  import bg1 from "../../../assets/img/home/slider1.jpg"
-  import bg2 from "../../../assets/img/home/slider2.jpg"
-  import bg3 from "../../../assets/img/home/slider3.jpg"
+  import bg1 from "../../../assets/img/mall/bg.jpg"
+  import bg2 from "../../../assets/img/mall/bg2.jpg"
+  import bg3 from "../../../assets/img/mall/bg3.jpg"
   export default {
     name: "MallCarouselBar",
     data() {

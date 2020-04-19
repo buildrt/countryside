@@ -39,11 +39,11 @@
     height: 100%;
     top: 0;
     left: 0;
-    background: url("../../assets/img/home/slider1.jpg");
+    background: url("../../assets/img/product/productBg.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    filter: blur(4px);
+    filter: blur(1px);
     transform: scale(1.02);
     z-index: 1;
   }
