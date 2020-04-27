@@ -4,7 +4,7 @@
       <el-step title="乡村要闻" icon="el-icon-reading"></el-step>
       <el-step title="政策通晓" icon="el-icon-reading"></el-step>
       <el-step title="文创产品" icon="el-icon-reading"></el-step>
-      <el-step title="乡村微导游" icon="el-icon-reading"></el-step>
+      <el-step title="云上智慧旅学" icon="el-icon-reading"></el-step>
       <el-step title="大学生论坛" icon="el-icon-reading"></el-step>
       <el-step title="网上商城" icon="el-icon-reading"></el-step>
     </el-steps>

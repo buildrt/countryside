@@ -148,21 +148,21 @@
                 <tr>
                   <td width="50%">
                     <el-tabs id="guideTabs" v-model="activeName5">
-                      <el-tab-pane label="住宿" name="first" style="text-align: left">
+                      <el-tab-pane label="“旅学”云地图" name="first" style="text-align: left">
                         <p style="font-size: 14px;margin-bottom: 10px">不同于单 一的文字介绍，将乡村的特色、重点放在游戏当中。</p>
                         <p style="font-size: 14px;margin-bottom: 10px">通过游戏的方式 让玩家们感受到乡村的独特魅力。</p>
                         <p style="font-size: 14px;margin-bottom: 10px">其次，本团队将大富翁以及飞行棋 的游玩模式，做了结合和改善，提高游戏的可玩性。</p>
                         <p style="font-size: 14px;margin-bottom: 10px">“村村游”大富翁是 由本团队的成员全程策划、设计、制作的，同时，团队还进行了反复 的试玩，</p>
                         <p style="font-size: 14px;margin-bottom: 10px">测试游戏的不足点，进行进一步的改善等。</p>
                       </el-tab-pane>
-                      <el-tab-pane label="交通" name="second" style="text-align: left">
+                      <el-tab-pane label="“智慧”行程安排" name="second" style="text-align: left">
                         <p style="font-size: 14px;margin-bottom: 8px">出于丰富文创产品的目的，想以一种礼物的形式赠送给对接合作的村的村委会</p>
                         <p style="font-size: 14px;margin-bottom: 8px">并且后期我们希望能通过该村的平台对我们制作的书签、明信片进行宣传,也可以挂在我们的网站上进行售卖，多种途径进行利用。</p>
                         <p style="font-size: 14px;margin-bottom: 8px">其次，考虑到大富翁、宣传画册制作的成本太高，后期不可能将所有的乡村都囊括</p>
                         <p style="font-size: 14px;margin-bottom: 8px">所以书签明信片就显得简单而又明了，是一个很好的选择。明信片也是由美术专业的同学负责</p>
                         <p style="font-size: 14px;margin-bottom: 8px">都是纯手绘的乡村的风景等;书签是有会ps技术的同学负责，在电脑上进行制作， 并印刷下来的。</p>
                       </el-tab-pane>
-                      <el-tab-pane label="美食" name="third" style="text-align: left">
+                      <el-tab-pane label="旅学活动" name="third" style="text-align: left">
                         <p style="font-size: 14px;margin-bottom: 15px">国务院办公厅印发《关于完善仲裁制度2》</p>
                         <p style="font-size: 14px;margin-bottom: 15px">国务院办公厅关于推进养老服务发展的意见</p>
                         <p style="font-size: 14px;margin-bottom: 15px">《关于完善仲裁制度提高仲裁公信力的若干意见》</p>
