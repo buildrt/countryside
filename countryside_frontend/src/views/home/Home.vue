@@ -38,34 +38,23 @@
                 <el-image id="newsMapImg" style="width: 85%;" :src="require('../../assets/img/home/news/map/homeMap1.png')" :preview-src-list="[require('../../assets/img/home/news/map/homeMap.jpg')]" fit="fill"></el-image>
               </el-tab-pane>
               <el-tab-pane label="历史背景" name="second" style="text-align: left">
-                <p style="font-size: 14px;margin-bottom: 15px">国务院办公厅印发《关于完善仲裁制度》</p>
-                <p style="font-size: 14px;margin-bottom: 15px">国务院办公厅关于推进养老服务发展的意见</p>
-                <p style="font-size: 14px;margin-bottom: 15px">《关于完善仲裁制度提高仲裁公信力的若干意见》</p>
-                <p style="font-size: 14px;margin-bottom: 15px">国务院办公厅关于推进养老服务发展的意见</p>
-                <p style="font-size: 14px;margin-bottom: 15px">关于完善仲裁制度提高仲裁公信力的若干意见》</p>
-                <p style="font-size: 14px;margin-bottom: 15px">《关于完善仲裁制度提高仲裁公信力的若干意见》</p>
-                <p style="font-size: 14px;margin-bottom: 15px">国务院办公厅关于推进养老服务发展的意见</p>
-                <p style="font-size: 14px;margin-bottom: 15px">关于完善仲裁制度提高仲裁公信力的若干意见》</p>
+                <p style="font-size: 14px;margin-bottom: 15px">了解乡村文化，就要从乡村的历史说起。</p>
+                <p style="font-size: 14px;margin-bottom: 15px">中国作为传承五千年的文化大国，乡村存在的历史极为悠久。</p>
+                <p style="font-size: 14px;margin-bottom: 15px">在这深厚的历史积淀下，乡村文化逐渐形成和发展起来，</p>
+                <p style="font-size: 14px;margin-bottom: 15px">中华民族传统文化也与此同时慢慢形成和发展。</p>
               </el-tab-pane>
               <el-tab-pane label="美食" name="third" style="text-align: left">
-                <p style="font-size: 14px;margin-bottom: 15px">国务院办公厅印发《关于完善仲裁制度1》</p>
-                <p style="font-size: 14px;margin-bottom: 15px">国务院办公厅关于推进养老服务发展的意见</p>
-                <p style="font-size: 14px;margin-bottom: 15px">《关于完善仲裁制度提高仲裁公信力的若干意见》</p>
-                <p style="font-size: 14px;margin-bottom: 15px">国务院办公厅关于推进养老服务发展的意见</p>
-                <p style="font-size: 14px;margin-bottom: 15px">关于完善仲裁制度提高仲裁公信力的若干意见》</p>
-                <p style="font-size: 14px;margin-bottom: 15px">《关于完善仲裁制度提高仲裁公信力的若干意见》</p>
-                <p style="font-size: 14px;margin-bottom: 15px">国务院办公厅关于推进养老服务发展的意见</p>
-                <p style="font-size: 14px;margin-bottom: 15px">关于完善仲裁制度提高仲裁公信力的若干意见》</p>
+                <p style="font-size: 14px;margin-bottom: 15px">在丰富的乡村文化中，美食文化现今也成为吸引游客前往乡村旅游的“原动力”之一。</p>
+                <p style="font-size: 14px;margin-bottom: 15px">生态自然的食材，简单朴实的制作方法，</p>
+                <p style="font-size: 14px;margin-bottom: 15px">乡村美食将在你的味蕾上打开新的世界。</p>
+                <p style="font-size: 14px;margin-bottom: 15px">如今，乡村主题餐厅已然成为乡村旅游的热点，</p>
+                <p style="font-size: 14px;margin-bottom: 15px">独具乡村风味的装修风格，给您耳目一新的体验。</p>
               </el-tab-pane>
               <el-tab-pane label="故事" name="fourth" style="text-align: left">
-                <p style="font-size: 14px;margin-bottom: 15px">国务院办公厅印发《关于完善仲裁制度2》</p>
-                <p style="font-size: 14px;margin-bottom: 15px">国务院办公厅关于推进养老服务发展的意见</p>
-                <p style="font-size: 14px;margin-bottom: 15px">《关于完善仲裁制度提高仲裁公信力的若干意见》</p>
-                <p style="font-size: 14px;margin-bottom: 15px">国务院办公厅关于推进养老服务发展的意见</p>
-                <p style="font-size: 14px;margin-bottom: 15px">关于完善仲裁制度提高仲裁公信力的若干意见》</p>
-                <p style="font-size: 14px;margin-bottom: 15px">《关于完善仲裁制度提高仲裁公信力的若干意见》</p>
-                <p style="font-size: 14px;margin-bottom: 15px">国务院办公厅关于推进养老服务发展的意见</p>
-                <p style="font-size: 14px;margin-bottom: 15px">关于完善仲裁制度提高仲裁公信力的若干意见》</p>
+                <p style="font-size: 14px;margin-bottom: 15px">乡村的小故事，时代的大变迁。</p>
+                <p style="font-size: 14px;margin-bottom: 15px">小小的乡村孕育着无数历史风流人文，留下了诸多令人惊叹的故事和传说；</p>
+                <p style="font-size: 14px;margin-bottom: 15px">这里培育出一辈辈的基层干部，他们公而忘私为民请命。</p>
+                <p style="font-size: 14px;margin-bottom: 15px">无论是默默无闻的基层干部，还是深藏民间的传说故事，都亟待我们去发现和挖掘。</p>
               </el-tab-pane>
             </el-tabs>
           </td>
@@ -74,13 +63,10 @@
           <td width="50%" style="text-align: left">
             <el-tabs v-model="activeName2" style="position: absolute; top: 16%; padding-left: 5%">
               <el-tab-pane label="政策早知道" name="first">
-                <p style="font-size: 14px;margin-bottom: 15px">国务院办公厅印发《关于完善仲裁制度提高仲裁公信力的若干意见》</p>
-                <p style="font-size: 14px;margin-bottom: 15px">国务院办公厅关于推进养老服务发展的意见</p>
-                <p style="font-size: 14px;margin-bottom: 15px">《关于完善仲裁制度提高仲裁公信力的若干意见》</p>
-                <p style="font-size: 14px;margin-bottom: 15px">国务院办公厅关于推进养老服务发展的意见</p>
-                <p style="font-size: 14px;margin-bottom: 15px">关于完善仲裁制度提高仲裁公信力的若干意见》</p>
-                <p style="font-size: 14px;margin-bottom: 15px">《关于完善仲裁制度提高仲裁公信力的若干意见》</p>
-                <p style="font-size: 14px;margin-bottom: 15px">国务院办公厅关于推进养老服务发展的意见</p>
+                <p style="font-size: 14px;margin-bottom: 15px">社会的发展和农村的进步也是分不开的。</p>
+                <p style="font-size: 14px;margin-bottom: 15px">伴随着国家对乡村振兴战略进行全面部署，计划到2020年，</p>
+                <p style="font-size: 14px;margin-bottom: 15px">实现农民增收渠道进一步拓宽、城乡居民生活水平差距持续缩小、</p>
+                <p style="font-size: 14px;margin-bottom: 15px">现行标准下农村贫困人口实现脱贫、农村基础设施建设深入推进等内容。</p>
               </el-tab-pane>
               <el-tab-pane></el-tab-pane>
               <el-tab-pane></el-tab-pane>
@@ -110,29 +96,19 @@
                   <td width="50%">
                     <el-tabs id="productTabs" v-model="activeName4" @tab-click="productTabsClick">
                       <el-tab-pane label="“村村游”大富翁" name="first" style="text-align: left">
-                        <p style="font-size: 14px;margin-bottom: 10px">不同于单 一的文字介绍，将乡村的特色、重点放在游戏当中。</p>
-                          <p style="font-size: 14px;margin-bottom: 10px">通过游戏的方式 让玩家们感受到乡村的独特魅力。</p>
-                          <p style="font-size: 14px;margin-bottom: 10px">其次，本团队将大富翁以及飞行棋 的游玩模式，做了结合和改善，提高游戏的可玩性。</p>
-                          <p style="font-size: 14px;margin-bottom: 10px">“村村游”大富翁是 由本团队的成员全程策划、设计、制作的，同时，团队还进行了反复 的试玩，</p>
-                          <p style="font-size: 14px;margin-bottom: 10px">测试游戏的不足点，进行进一步的改善等。</p>
+                        <p style="font-size: 14px;margin-bottom: 10px">“村村游”大富翁以大富翁的游戏模式为参考，创新的融入各个乡村特有的景点，</p>
+                        <p style="font-size: 14px;margin-bottom: 10px">让玩家能在娱乐的同时了解不同乡村的特色，提前熟悉乡村的特色景点和旅游路线，从而更好地激发玩家走进乡村的兴趣。</p>
                       </el-tab-pane>
                       <el-tab-pane label="明信片和书签" name="second" style="text-align: left">
-                        <p style="font-size: 14px;margin-bottom: 8px">出于丰富文创产品的目的，想以一种礼物的形式赠送给对接合作的村的村委会</p>
-                        <p style="font-size: 14px;margin-bottom: 8px">并且后期我们希望能通过该村的平台对我们制作的书签、明信片进行宣传,也可以挂在我们的网站上进行售卖，多种途径进行利用。</p>
-                        <p style="font-size: 14px;margin-bottom: 8px">其次，考虑到大富翁、宣传画册制作的成本太高，后期不可能将所有的乡村都囊括</p>
-                        <p style="font-size: 14px;margin-bottom: 8px">所以书签明信片就显得简单而又明了，是一个很好的选择。明信片也是由美术专业的同学负责</p>
-                        <p style="font-size: 14px;margin-bottom: 8px">都是纯手绘的乡村的风景等;书签是有会ps技术的同学负责，在电脑上进行制作， 并印刷下来的。</p>
+                        <p style="font-size: 14px;margin-bottom: 8px">本项目为帮助乡村更好地进行宣传，以乡村特色景点为主线制作了乡村的周边产品：明信片和书签。</p>
+                        <p style="font-size: 14px;margin-bottom: 8px">同时，两种产品都小巧精致，方便分发，从而更好地宣传乡村</p>
                       </el-tab-pane>
                       <el-tab-pane label="帆布袋" name="third" style="text-align: left">
-                        <p style="font-size: 14px;margin-bottom: 15px">帆布袋以简洁大方的白色为基调，</p>
-                        <p style="font-size: 14px;margin-bottom: 15px">正面为“乡村宝藏”四个遒劲水墨字，提带融入乡村山水元素，旨在体现乡村的诗情画意之美。</p>
+                        <p style="font-size: 14px;margin-bottom: 15px">在明信片和书签的基础上，本项目又推出印有手绘乡村美景的帆布袋，既美观实用，又可以对乡村进行宣传。</p>
+                        <p style="font-size: 14px;margin-bottom: 15px">在项目网站的商城进行购买或者通过转发相关宣传文章进行集赞抽奖，两大途径皆可获得哦！</p>
                       </el-tab-pane>
                       <el-tab-pane label="其他" name="forth" style="text-align: left">
-                        <p style="font-size: 14px;margin-bottom: 10px">宣传画册为了改变一成不变的文字介绍方式，更加直观、更加吸人眼球，</p>
-                        <p style="font-size: 14px;margin-bottom: 10px">于是我们创作了宣传画册</p>
-                        <p style="font-size: 14px;margin-bottom: 10px">宣传画册方面我们有专业的美院同学负责，进行设计、绘画等</p>
-                        <p style="font-size: 14px;margin-bottom: 10px">其次， 在宣传画册中我们也融入了小红军的形象，</p>
-                        <p style="font-size: 14px;margin-bottom: 10px">将小红军作为宣传画册的引导， 带领大家进行更有序得浏览。</p>
+                        <p style="font-size: 14px;margin-bottom: 10px">随着协会不断深入乡村开展调研，项目团队也将继续设计与推广多样化的文创产品，敬请期待！</p>
                       </el-tab-pane>
                     </el-tabs>
                   </td>
@@ -149,25 +125,17 @@
                   <td width="50%">
                     <el-tabs id="guideTabs" v-model="activeName5">
                       <el-tab-pane label="“旅学”云地图" name="first" style="text-align: left">
-                        <p style="font-size: 14px;margin-bottom: 10px">不同于单 一的文字介绍，将乡村的特色、重点放在游戏当中。</p>
-                        <p style="font-size: 14px;margin-bottom: 10px">通过游戏的方式 让玩家们感受到乡村的独特魅力。</p>
-                        <p style="font-size: 14px;margin-bottom: 10px">其次，本团队将大富翁以及飞行棋 的游玩模式，做了结合和改善，提高游戏的可玩性。</p>
-                        <p style="font-size: 14px;margin-bottom: 10px">“村村游”大富翁是 由本团队的成员全程策划、设计、制作的，同时，团队还进行了反复 的试玩，</p>
-                        <p style="font-size: 14px;margin-bottom: 10px">测试游戏的不足点，进行进一步的改善等。</p>
+                        <p style="font-size: 14px;margin-bottom: 10px">本团队在深入乡村开展调研的基础上，为每一个乡村都设计了画风精美的“旅学”云地图。</p>
+                        <p style="font-size: 14px;margin-bottom: 10px">同学们只需要动一动鼠标，就可以将乡村美景尽收眼底啦！</p>
                       </el-tab-pane>
                       <el-tab-pane label="“智慧”行程安排" name="second" style="text-align: left">
-                        <p style="font-size: 14px;margin-bottom: 8px">出于丰富文创产品的目的，想以一种礼物的形式赠送给对接合作的村的村委会</p>
-                        <p style="font-size: 14px;margin-bottom: 8px">并且后期我们希望能通过该村的平台对我们制作的书签、明信片进行宣传,也可以挂在我们的网站上进行售卖，多种途径进行利用。</p>
-                        <p style="font-size: 14px;margin-bottom: 8px">其次，考虑到大富翁、宣传画册制作的成本太高，后期不可能将所有的乡村都囊括</p>
-                        <p style="font-size: 14px;margin-bottom: 8px">所以书签明信片就显得简单而又明了，是一个很好的选择。明信片也是由美术专业的同学负责</p>
-                        <p style="font-size: 14px;margin-bottom: 8px">都是纯手绘的乡村的风景等;书签是有会ps技术的同学负责，在电脑上进行制作， 并印刷下来的。</p>
+                        <p style="font-size: 14px;margin-bottom: 8px">本团队依据用户的需求为大学生个性化定制集乡村研学教育活动、餐饮、住宿及交通为一体的最优的“智慧”旅学方案，提供一体化的行程安排服务。</p>
                       </el-tab-pane>
                       <el-tab-pane label="旅学活动" name="third" style="text-align: left">
-                        <p style="font-size: 14px;margin-bottom: 15px">国务院办公厅印发《关于完善仲裁制度2》</p>
-                        <p style="font-size: 14px;margin-bottom: 15px">国务院办公厅关于推进养老服务发展的意见</p>
-                        <p style="font-size: 14px;margin-bottom: 15px">《关于完善仲裁制度提高仲裁公信力的若干意见》</p>
-                        <p style="font-size: 14px;margin-bottom: 15px">国务院办公厅关于推进养老服务发展的意见</p>
-                        <p style="font-size: 14px;margin-bottom: 15px">关于完善仲裁制度提高仲裁公信力的若干意见》</p>
+                        <p style="font-size: 14px;margin-bottom: 15px">本团队通过设计大学生深入乡村开展以思政课程实践、社会实践为载体的行万里路的研学教育活动，</p>
+                        <p style="font-size: 14px;margin-bottom: 15px">培养大学生积极投身于乡村建设的贡献意识，传播乡村文化，</p>
+                        <p style="font-size: 14px;margin-bottom: 15px">吸引更多的大学生立志扎根乡村、服务乡村，</p>
+                        <p style="font-size: 14px;margin-bottom: 15px">为培养懂农业、爱农村、爱农民的“一懂两爱”新型农业人才作出贡献，进一步助推乡村振兴。</p>
                       </el-tab-pane>
                     </el-tabs>
                   </td>
@@ -188,40 +156,31 @@
           <td>
             <el-tabs v-model="activeName3" style="position: absolute; top: 67%; padding-left: 5%">
               <el-tab-pane label="推荐" name="first" style="text-align: left">
-                <p style="font-size: 14px;margin-bottom: 15px">国务院办公厅印发《关于完善仲裁制度》</p>
-                <p style="font-size: 14px;margin-bottom: 15px">国务院办公厅关于推进养老服务发展的意见</p>
-                <p style="font-size: 14px;margin-bottom: 15px">《关于完善仲裁制度提高仲裁公信力的若干意见》</p>
-                <p style="font-size: 14px;margin-bottom: 15px">国务院办公厅关于推进养老服务发展的意见</p>
-                <p style="font-size: 14px;margin-bottom: 15px">关于完善仲裁制度提高仲裁公信力的若干意见》</p>
-                <p style="font-size: 14px;margin-bottom: 15px">《关于完善仲裁制度提高仲裁公信力的若干意见》</p>
-                <p style="font-size: 14px;margin-bottom: 15px">国务院办公厅关于推进养老服务发展的意见</p>
+                <p style="font-size: 14px;margin-bottom: 15px">扬州大学“乡村宝藏”调研团来到无锡白塔村，就当地乡村生态旅游业发展情况开展深入调研</p>
+                <p style="font-size: 14px;margin-bottom: 15px">山东大学“渝我同行”宣讲团赴南开中学举行“相约山大·励志起航”宣讲活动</p>
+                <p style="font-size: 14px;margin-bottom: 15px">扬州大学 “峥嵘七十载 勇追中国梦”庆祝新中国成立70周年宣讲团来到扬州市双桥社区举行系列宣讲活动</p>
+                <p style="font-size: 14px;margin-bottom: 15px">安徽大学生志愿者探访中国好人李坤池：年迈未敢忘忧国</p>
               </el-tab-pane>
               <el-tab-pane label="最新" name="second" style="text-align: left">
-                <p style="font-size: 14px;margin-bottom: 15px">国务院办公厅印发《关于完善仲裁制度2》</p>
-                <p style="font-size: 14px;margin-bottom: 15px">国务院办公厅关于推进养老服务发展的意见</p>
-                <p style="font-size: 14px;margin-bottom: 15px">《关于完善仲裁制度提高仲裁公信力的若干意见》</p>
-                <p style="font-size: 14px;margin-bottom: 15px">国务院办公厅关于推进养老服务发展的意见</p>
-                <p style="font-size: 14px;margin-bottom: 15px">关于完善仲裁制度提高仲裁公信力的若干意见》</p>
-                <p style="font-size: 14px;margin-bottom: 15px">《关于完善仲裁制度提高仲裁公信力的若干意见》</p>
-                <p style="font-size: 14px;margin-bottom: 15px">国务院办公厅关于推进养老服务发展的意见</p>
+                <p style="font-size: 14px;margin-bottom: 15px">山东大学药学院“解忧药疫”社会实践队组织线上心理辅导视频观看</p>
+                <p style="font-size: 14px;margin-bottom: 15px">扬州大学隆重举办“乡村振兴 青年先行”实践成果分享会</p>
+                <p style="font-size: 14px;margin-bottom: 15px">青春战“疫”，学子力行——记徐州工程学院学子疫情防控实践路</p>
+                <p style="font-size: 14px;margin-bottom: 15px">扬州大学反哺实践团队前往清水小学开展相关支教活动</p>
+                <p style="font-size: 14px;margin-bottom: 15px">山东大学万众疫心实践团队举办“停课不停学”主题宣讲会</p>
               </el-tab-pane>
               <el-tab-pane label="精选" name="third" style="text-align: left">
-                <p style="font-size: 14px;margin-bottom: 15px">国务院办公厅印发《关于完善仲裁制度3》</p>
-                <p style="font-size: 14px;margin-bottom: 15px">国务院办公厅关于推进养老服务发展的意见</p>
-                <p style="font-size: 14px;margin-bottom: 15px">《关于完善仲裁制度提高仲裁公信力的若干意见》</p>
-                <p style="font-size: 14px;margin-bottom: 15px">国务院办公厅关于推进养老服务发展的意见</p>
-                <p style="font-size: 14px;margin-bottom: 15px">关于完善仲裁制度提高仲裁公信力的若干意见》</p>
-                <p style="font-size: 14px;margin-bottom: 15px">《关于完善仲裁制度提高仲裁公信力的若干意见》</p>
-                <p style="font-size: 14px;margin-bottom: 15px">国务院办公厅关于推进养老服务发展的意见</p>
+                <p style="font-size: 14px;margin-bottom: 15px">扬州大学“广陵区老街巷改造过程中居民观念变迁”考察团队在埂子街、堂子巷、礼拜巷等地展开实践调研</p>
+                <p style="font-size: 14px;margin-bottom: 15px">中大新华记者站携手龙坡学子开启文化寻根之旅</p>
+                <p style="font-size: 14px;margin-bottom: 15px">扬州大学“携爱‘黔’行，用心守‘护’公益实践团”，让爱散播健康，用爱传递希望</p>
+                <p style="font-size: 14px;margin-bottom: 15px">临沂大学信息科学与工程学院赴革命圣地延安社会实践</p>
+                <p style="font-size: 14px;margin-bottom: 15px">烟台大学法学院锲行实践团：中国共享单车走进伦敦</p>
               </el-tab-pane>
               <el-tab-pane label="全部" name="forth" style="text-align: left">
-                <p style="font-size: 14px;margin-bottom: 15px">国务院办公厅印发《关于完善仲裁制度4》</p>
-                <p style="font-size: 14px;margin-bottom: 15px">国务院办公厅关于推进养老服务发展的意见</p>
-                <p style="font-size: 14px;margin-bottom: 15px">《关于完善仲裁制度提高仲裁公信力的若干意见》</p>
-                <p style="font-size: 14px;margin-bottom: 15px">国务院办公厅关于推进养老服务发展的意见</p>
-                <p style="font-size: 14px;margin-bottom: 15px">关于完善仲裁制度提高仲裁公信力的若干意见》</p>
-                <p style="font-size: 14px;margin-bottom: 15px">《关于完善仲裁制度提高仲裁公信力的若干意见》</p>
-                <p style="font-size: 14px;margin-bottom: 15px">国务院办公厅关于推进养老服务发展的意见</p>
+                <p style="font-size: 14px;margin-bottom: 15px">扬州大学“乡约”公益服务实践团基于调研与支教，先后在江苏扬州、贵州安顺开展实践活动</p>
+                <p style="font-size: 14px;margin-bottom: 15px">重庆大学学子开展“不忘初心走基层 实践磨砺勇担当”基层挂职实</p>
+                <p style="font-size: 14px;margin-bottom: 15px">清华学子赴普洱市茶叶和咖啡产业发展中心开展“茶产业扶贫”调研</p>
+                <p style="font-size: 14px;margin-bottom: 15px">聊城大学教科院举办“女子防身，安全自护”社会实践活动</p>
+                <p style="font-size: 14px;margin-bottom: 15px">湖南文理学院师生赴谢家垭乡中心完小开展“精准脱贫”教育帮扶活动</p>
               </el-tab-pane>
             </el-tabs>
           </td>
@@ -294,7 +253,7 @@
         activeName2: 'first',
         activeName3: 'first',
         activeName4: 'second',
-        activeName5: 'first',
+        activeName5: 'third',
         gameActive: false,
         bookActive: true,
         otherActive: false,
